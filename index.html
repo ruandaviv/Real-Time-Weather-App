@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="app">
+        <h1>Weather App</h1>
+
+        <div class="search-field">
+          <input
+            type="text"
+            placeholder="Digite o nome da cidade"
+            spellcheck="false"
+          />
+          <button class="search-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-search"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+              <path d="M21 21l-6 -6" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="error">
+          <p>Nome de cidade/país inválido</p>
+        </div>
+
+        <div class="weather">
+          <img src="/assets/images/clear.png" class="weather-icon" />
+          <div class="weather-principal">
+            <h2 class="degrees-text">33°C</h2>
+            <p class="city">Arapiraca</p>
+          </div>
+
+          <div class="weather-information">
+            <div class="humidity">
+              <div class="humidity-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-ripple"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M3 7c3 -2 6 -2 9 0s6 2 9 0" />
+                  <path d="M3 17c3 -2 6 -2 9 0s6 2 9 0" />
+                  <path d="M3 12c3 -2 6 -2 9 0s6 2 9 0" />
+                </svg>
+              </div>
+              <h2 class="humidity-percentage">55%</h2>
+              <p>Umidade</p>
+            </div>
+
+            <div class="wind">
+              <div class="wind-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-wind"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M5 8h8.5a2.5 2.5 0 1 0 -2.34 -3.24" />
+                  <path d="M3 12h15.5a2.5 2.5 0 1 1 -2.34 3.24" />
+                  <path d="M4 16h5.5a2.5 2.5 0 1 1 -2.34 3.24" />
+                </svg>
+              </div>
+              <h2 class="wind-speed">14Km/h</h2>
+              <p>Velocidade do vento</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
