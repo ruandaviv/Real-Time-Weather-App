@@ -9,6 +9,7 @@ Technologies Used:
 -> CSS
 
 -> JavaScript
+
 Features:
 
 Real-Time Data: Get instant updates on weather conditions.
